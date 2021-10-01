@@ -12,9 +12,9 @@
           background-size: cover;"
         {% endif %}
 >
-    <div class="row pb-0 mb-0 px-3 d-flex justify-content-center">
+    <div class="row pb-0 mb-0 d-flex justify-content-center">
         {% for person in content %}
-        {% include person.html person=person %}
+        {% include person.html person=person style=include.people.style.person %}
         {% endfor %}
     </div>
 </div>

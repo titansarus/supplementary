@@ -1,14 +1,21 @@
-title: Supplementary
+title: SUT-AI | Supplementary
 nav:
   brand:
     text: CE417
     link: https://sut-ai.github.io/
   content:
-  - index: index
+  - link: https://sut-ai.github.io/
+    text: Home
+  - link: https://sut-ai.github.io/pages/lectures/
+    text: Lectures
+  - link: https://sut-ai.github.io/notes/
     text: Notes
-    description: Additional contents and supplementary materials!
-    link: /supplementary/
-    kind: Page
+  - link: /supplementary/
+    text: Supplementary
+  - link: https://sut-ai.github.io/pages/problem_sets/
+    text: Problem Sets
+  - link: https://sut-ai.github.io/pages/team/
+    text: Team
 meta:
 - name: keywords
   content: "Webifier, Sharif University of Technology, Mohammad Hossein Rohban, Markov\
@@ -24,59 +31,182 @@ config:
     theme: github-light
     crossorigin: anonymous
   google_analytics_id: G-VZRZHCJ5V0
-  search: ture
+  search:
+    content: true
+    links: false
 header:
   title: <p>Supplementary</p>
   description: <p>Additional contents and supplementary materials!</p>
-  background: /supplementary/assets/images/supplementary-header.jpg
+  background: /supplementary/assets/index/images/supplementary-header.jpg
 footer:
-  background: /supplementary/assets/images/supplementary-header.jpg
+  background: /supplementary/assets/index/images/supplementary-header.jpg
 prerequisites:
   label: Prerequisites
-  background: /supplementary/assets/images/supplementary-header.jpg
+  background: /supplementary/assets/index/images/supplementary-header.jpg
+  math:
+    label: Mathematics
+    content: "<p>One can argue that Artificial Intelligence is nothing but pure mathematics!\
+      \ The more math you know, the easier studying this course and any other \nengineering\
+      \ course would be for you. No significant background in mathematics is necessary\
+      \ for taking this course, but students are expected to be \nfamiliar with basic\
+      \ Calculus. In addition, knowing some Linear Algebra is a plus.</p>"
+    calculus:
+      label: Calculus
+      content: <p>If you feel uncomfortable with (Multivariate) Calculus, these courses
+        and materials can be helpful:</p>
+      links:
+        kind: block
+        label: false
+        content:
+        - link: https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/
+          text: MIT18.01-F2006 Single Variable Calculus
+          description: <p>An introductory calculus course by Prof. David Jerison,
+            covering differentiation and integration of functions of one variable,
+            with applications.</p>
+          kind: Course, Prerequisite
+          icon: fas fa-chalkboard-teacher
+        - link: https://ocw.mit.edu/courses/mathematics/18-02sc-multivariable-calculus-fall-2010/
+          text: MIT18.02-F2010 Multivariable Calculus
+          description: <p>A course by Prof. Denis Auroux that covers differential,
+            integral and vector calculus for functions of more than one variable.
+            These mathematical tools and methods are used extensively in the physical
+            sciences, engineering, economics and computer graphics.</p>
+          kind: Course, Prerequisite
+          icon: fas fa-chalkboard-teacher
+        - link: https://www.pearson.com/nl/en_NL/higher-education/subject-catalogue/mathematics/Calculus-A-Complete-Course-Adams-10e.html
+          text: 'Calculus: A Complete Course, by Robert A. Adams & Christopher Essex'
+          description: <p>This book covers all of Undergraduate Level Calculus and
+            is highly praised for providing complete and precise statements of theorems,
+            using geometric reasoning in applied problems, and for offering a range
+            of applications across the sciences.</p>
+          icon: fas fa-book
+          kind: Textbook, Prerequisite
+  ds_algorithms:
+    label: Datastructures & Algorithms
+    content: ''
   prob_stats:
     label: Probability and Statistics
-    description:
-      label: false
-      content: '<p>About half of this course hinges around a general understanding
-        of probability theory and some essential statistical tools such as MLEs and
-        Confidence Intervals.
+    content: '<p>About half of this course hinges around a general understanding of
+      probability theory and some essential
 
-        Although most of the materials in this course are self-contained and usually
-        do a retouch on these fundamental concepts, it is highly suggested that students
-        who take this course, already have a strong background in both probability
-        and statistics.</p>
+      statistical tools such as MLEs and Confidence Intervals.Although most of the
+      materials in this course are
 
-        <p>There are a number of excellent courses available online covering these
-        topics. A skim through the material or lectures of such courses might be a
-        perfect way to review and fill in the gaps of your probabilistic and statistical
-        sense!</p>
+      self-contained and usually do a retouch on these fundamental concepts, it is
+      highly suggested that students
 
-        <p>The following two courses from <a href="https://ocw.mit.edu/">MIT OCW</a>,
+      who take this course, already have a strong background in both probability and
+      statistics.</p>'
+    english_courses:
+      label: Courses
+      content: '<p>There are a number of excellent courses available online covering
+        these topics. A skim through the material or
+
+        lectures of such courses might be a perfect way to review and fill in the
+        gaps of your probabilistic and
+
+        statistical knowledge!</p>
+
+        <p>The following two courses from <a data-bs-html="true" data-bs-toggle="tooltip"
+        description="Massive repository of free MIT courses" href="https://ocw.mit.edu/"
+        kind="Course Repository" title="&lt;p&gt;Massive repository of free MIT courses&lt;/p&gt;">MIT
+        OCW</a>,
+
         are a great start:</p>'
-    content:
-      kind: block
+      courses:
+        kind: block
+        label: false
+        content:
+        - link: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/
+          text: MIT6.041-F2010 Probabilistic Systems Analysis & Applied Probability
+          description: <p>A thorough course that covers probability theory from axioms
+            up until basic Markov Chains and Markov Decision Processes. Instructed
+            by the great Prof. John Tsitsiklis, auditing this course is highly suggested
+            for those students who feel uncomfortable with general probability theory.</p>
+          kind: Course, Prerequisite
+          icon: fas fa-chalkboard-teacher
+        - link: https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/
+          text: MIT18.650-F2016 Statistics for Applications
+          description: <p>A complete course by Prof. Philippe Rigollet, covering topics
+            ranging from Parametric Inference to PCA and Generalized Linear Models.</p>
+          kind: Course, Prerequisite
+          icon: fas fa-chalkboard-teacher
+    farsi_courses:
       label: false
-      content:
-      - link: https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/
-        text: MIT6.041-F2010 Probabilistic Systems Analysis & Applied Probability
-        description: <p>A thorough course that covers probability theory from axioms
-          up until basic Markov Chains and Markov Decision Processes. Instructed by
-          the great Prof. John Tsitsiklis, auditing this course is highly suggested
-          for those students who feel uncomfortable with general probability theory.</p>
-        kind: External, Course, Prerequisite
-        icon: fas fa-link
-      - link: https://ocw.mit.edu/courses/mathematics/18-650-statistics-for-applications-fall-2016/
-        text: MIT18.650-F2016 Statistics for Applications
-        description: <p>A complete course by Prof. Philippe Rigollet, covering topics
-          ranging from Parametric Inference to PCA and Generalized Linear Models.</p>
-        kind: External, Course, Prerequisite
-        icon: fas fa-link
+      content: '<p>If you are looking for courses taught in Farsi,
+
+        <a data-bs-html="true" data-bs-toggle="tooltip" description="A complete course
+        on probability and statistics, intended for computer engineering students."
+        href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D8%A7%D8%B1-%D8%A7%D8%AD%D8%AA%D9%85%D8%A7%D9%84-%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-mk627/"
+        kind="Course, Prerequisite" title="&lt;p&gt;A complete course on probability
+        and statistics, intended for computer engineering students.&lt;/p&gt;"><i
+        aria-hidden="true" class="fas fa-chalkboard-teacher"></i> Prof. A. Sharifi''s
+        Engineering probability and statistics course</a>
+
+        on <a data-bs-html="true" data-bs-toggle="tooltip" description="Repository
+        professional courses taught in Farsi" href="https://maktabkhooneh.org/" kind="Course
+        Repository" title="&lt;p&gt;Repository professional courses taught in Farsi&lt;/p&gt;">maktabkhoone</a>
+
+        is highly suggested.</p>'
+    textbooks:
+      label: Textbooks
+      content: '<p>There is no doubt that consulting one of the numerous well-known
+        textbooks on each of these subjects is also a
+
+        great way to ensure a concrete understanding of probability and statistics.
+        The following is a list of suggested
+
+        references to checkout:</p>'
+      links:
+        kind: block
+        label: false
+        content:
+        - link: https://www.pearson.com/store/p/first-course-in-probability-a/P100000865710/9780134753683
+          text: A First Course in Probability, by Sheldon M. Ross
+          description: <p>features clear and intuitive explanations of the mathematics
+            of probability theory, outstanding problem sets, and a variety of diverse
+            examples and applications. This book only assumes a background in elementary
+            calculus.</p>
+          icon: fas fa-book
+          kind: Textbook, Prerequisite
+        - link: https://link.springer.com/book/10.1007/978-0-387-21736-9
+          text: 'All of Statistics: A Concise Course in Statistical Inference, by
+            Larry Wasserman'
+          description: <p>This book covers a much wider range of topics than a typical
+            introductory text on mathematical statistics. It includes modern topics
+            like nonparametric curve estimation, bootstrapping and classification,
+            topics that are usually relegated to follow-up courses. The reader is
+            assumed to know calculus and a little linear algebra.</p>
+          kind: Textbook, Prerequisite
+          icon: fas fa-book
 notebooks:
   label: Notebooks
-  background: /supplementary/assets/images/supplementary-header.jpg
-  content: <p>TODO</p>
+  background: /supplementary/assets/index/images/supplementary-header.jpg
+  content:
+  - notebook: notebooks/logic_programming
+    link: /supplementary/notebooks/logic_programming/
+    text: <p>Prolog - Gateway to Logic Programming</p>
+    description: <p>In this notebook we talk about Prolog basics. We also learn how
+      to benefit from Prolog's power using Python.</p>
+    kind: Content
+  - notebook: notebooks/search_in_continuous_space
+    link: /supplementary/notebooks/search_in_continuous_space/
+    text: <p>ML In Continuous Space</p>
+    description: <p>In this notebook we talk about gradient descent, challenges and
+      improvements on this algorithm.</p>
+    kind: Content
+  - notebook: notebooks/hmm_speech_recognition
+    link: /supplementary/notebooks/hmm_speech_recognition/
+    text: <p>HMMs' Applications - Speach Recognition</p>
+    description: <p>In this notebook, we will study how Hidden Markov Models can be
+      applied to speech recognition and introduce some useful automatic speech recognition
+      (ASR) tools.</p>
+    kind: Content
 further-readings:
   label: Further Readings
-  background: /supplementary/assets/images/supplementary-header.jpg
+  background: /supplementary/assets/index/images/supplementary-header.jpg
   content: <p>TODO</p>
+kind: Index
+search:
+  content: true
+  links: false
