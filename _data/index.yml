@@ -202,6 +202,13 @@ notebooks:
       applied to speech recognition and introduce some useful automatic speech recognition
       (ASR) tools.</p>
     kind: Content
+  - notebook: notebooks/convex_optimization
+    link: /supplementary/notebooks/convex_optimization/
+    text: <p>Convex Optimization</p>
+    description: <p>In this notebook we talk about Convex Optimization fundamentals.
+      We also examine a simple practical application of convex optimization; Image
+      in-painting using CVXPY package in Python.</p>
+    kind: Content
 further-readings:
   label: Further Readings
   background: /supplementary/assets/index/images/supplementary-header.jpg
